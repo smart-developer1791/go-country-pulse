@@ -59,7 +59,7 @@ http://localhost:8080
 
 ## 🌐 Data Source
 
-Data provided by [REST Countries API](https://restcountries.com/) — a free public API with comprehensive country information.
+Data provided by [REST Countries API](https://restcountries.com/) — a free public API with 195 independent countries.
 
 ### Country Information Includes:
 
@@ -93,21 +93,21 @@ go-country-pulse/
 
 ```text
 ┌─────────────────────────────────────────────────────────┐
-│                    Country Pulse                         │
+│                    Country Pulse                        │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
+│                                                         │
 │   ┌──────────┐      ┌───────────┐      ┌─────────────┐  │
 │   │  Client  │◄────►│  Go/Chi   │◄────►│ REST        │  │
 │   │ Browser  │ SSE  │  Server   │ HTTP │ Countries   │  │
 │   └──────────┘      └───────────┘      │ API         │  │
-│                                         └─────────────┘  │
-│                                                          │
-│   Stream Flow:                                           │
-│   1. Server fetches all countries on startup             │
-│   2. Client connects to /api/stream                      │
-│   3. Random country sent every 4 seconds                 │
-│   4. UI updates with animations                          │
-│                                                          │
+│                                        └─────────────┘  │
+│                                                         │
+│   Stream Flow:                                          │
+│   1. Server fetches all countries on startup            │
+│   2. Client connects to /api/stream                     │
+│   3. Random country sent every 4 seconds                │
+│   4. UI updates with animations                         │
+│                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
